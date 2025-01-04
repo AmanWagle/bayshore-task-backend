@@ -1,0 +1,335 @@
+{
+	"info": {
+		"_postman_id": "850c0ea4-dc02-41ad-af87-631edb65dd7f",
+		"name": "Library Managemnet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11046762"
+	},
+	"item": [
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "Create Book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFtYW4yMjFAZ21haWwuY29tIiwicm9sZSI6InBhdHJvbiIsImlhdCI6MTczNTk0OTkxOCwiZXhwIjoxNzM2MDM2MzE4fQ.fRtmyrtKzUES8d0S7zdN7M_xD6rhALtz0Z9eaNJzwGg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Dead Mountain",
+									"type": "text"
+								},
+								{
+									"key": "author",
+									"value": "Douglas Preston",
+									"type": "text"
+								},
+								{
+									"key": "isbn",
+									"value": "1538767201",
+									"type": "text"
+								},
+								{
+									"key": "publicationDate",
+									"value": "2014-05-05",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "In 2008, nine mountaineers failed to return from a winter backpacking trip in the New Mexico mountains. At their final campsite, searchers found a bizarre scene: something had appeared at the door of their tent so terrifying that it impelled them to slash their way out and flee barefoot to certain death in a blizzard. Despite a diligent search, only six bodies were found, two violently crushed and inexplicably missing their eyes. The case, given the code name “Dead Mountain” by the FBI, was never solved.",
+									"type": "text"
+								},
+								{
+									"key": "publisher",
+									"value": "Grand Central Publishing",
+									"type": "text"
+								},
+								{
+									"key": "edition",
+									"value": "Ballantine Books",
+									"type": "text"
+								},
+								{
+									"key": "genre",
+									"value": "Mystery",
+									"type": "text"
+								},
+								{
+									"key": "language",
+									"value": "English",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "coverPhoto",
+									"type": "file",
+									"src": "/C:/Users/amanw/Downloads/81JmI553DbL._SL1500_.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host_url}}books",
+							"host": [
+								"{{host_url}}books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}books",
+							"host": [
+								"{{host_url}}books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}books/search?criteria=author&keyword=Lisa",
+							"host": [
+								"{{host_url}}books"
+							],
+							"path": [
+								"search"
+							],
+							"query": [
+								{
+									"key": "criteria",
+									"value": "author"
+								},
+								{
+									"key": "keyword",
+									"value": "Lisa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View Book Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}books/677878e7712ece3b231870fd",
+							"host": [
+								"{{host_url}}books"
+							],
+							"path": [
+								"677878e7712ece3b231870fd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFtYW53YWdsZTEwQGdtYWlsLmNvbSIsInJvbGUiOiJsaWJyYXJpYW4iLCJpYXQiOjE3MzU5NDkxOTEsImV4cCI6MTczNjAzNTU5MX0.p56NLaMmlKkQdU0wf1Lm95ZPsVCYH5g7_5o-L78j06A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Dead Mountain - New -New",
+									"type": "text"
+								},
+								{
+									"key": "author",
+									"value": "Aman Wagle",
+									"type": "text"
+								},
+								{
+									"key": "isbn",
+									"value": "1538767201",
+									"type": "text"
+								},
+								{
+									"key": "publicationDate",
+									"value": "2014-05-05",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "In 2008, nine mountaineers failed to return from a winter backpacking trip in the New Mexico mountains. At their final campsite, searchers found a bizarre scene: something had appeared at the door of their tent so terrifying that it impelled them to slash their way out and flee barefoot to certain death in a blizzard. Despite a diligent search, only six bodies were found, two violently crushed and inexplicably missing their eyes. The case, given the code name “Dead Mountain” by the FBI, was never solved.",
+									"type": "text"
+								},
+								{
+									"key": "publisher",
+									"value": "Grand Central Publishing",
+									"type": "text"
+								},
+								{
+									"key": "edition",
+									"value": "Ballantine Books",
+									"type": "text"
+								},
+								{
+									"key": "genre",
+									"value": "Mystery",
+									"type": "text"
+								},
+								{
+									"key": "language",
+									"value": "English",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "coverPhoto",
+									"type": "file",
+									"src": "/C:/Users/amanw/Downloads/81DsWSATqbL._SL1500_.jpg",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host_url}}books/67787b94bb59f9d740b90ab0",
+							"host": [
+								"{{host_url}}books"
+							],
+							"path": [
+								"67787b94bb59f9d740b90ab0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFtYW53YWdsZTEwQGdtYWlsLmNvbSIsInJvbGUiOiJsaWJyYXJpYW4iLCJpYXQiOjE3MzU5NDkxOTEsImV4cCI6MTczNjAzNTU5MX0.p56NLaMmlKkQdU0wf1Lm95ZPsVCYH5g7_5o-L78j06A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}books/67787b94bb59f9d740b90ab0",
+							"host": [
+								"{{host_url}}books"
+							],
+							"path": [
+								"67787b94bb59f9d740b90ab0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"aman221@gmail.com\",\r\n    \"password\": \"aman@221\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host_url}}users/register",
+							"host": [
+								"{{host_url}}users"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"amanwagle10@gmail.com\",\r\n    \"password\": \"amanwagle10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host_url}}users/login",
+							"host": [
+								"{{host_url}}users"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "host_url",
+			"value": "http://localhost:3000/"
+		}
+	]
+}
