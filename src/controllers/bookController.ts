@@ -12,7 +12,7 @@ const validateBookDetails = (bookDetails: Partial<BookDetails>): boolean => {
   if (author == null || author == "") return false;
   if (isbn == null || isbn == "") return false;
   if (!publicationDate) return false;
-  if (quantity == null || !Number.isInteger(quantity)) return false;
+  if (quantity == null) return false;
 
   return true;
 };
