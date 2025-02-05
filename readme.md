@@ -1,7 +1,5 @@
 # Library Management System (LMS) - DEMO APP
 
-The library management system has been developed as a part of test project for the role of Junior Developer & Support Engineer at bayshore healthcare.
-
 ## Programming Languages
 
 - Node.js (Express)
@@ -28,14 +26,14 @@ The library management system has been developed as a part of test project for t
   JWT_SECRET=JWT_SECRET
   ```
 
-- For test purpose you can use the following mongodb instance
+- For test purpose, you can use the following MongoDB instance
   `mongodb+srv://aman:cOz29ZPAq@librarymanagementsystem.ip6ti.mongodb.net/?retryWrites=true&w=majority&appName=LibraryManagementSystem`
 
 ## User Details
 
-Since the librarian acts as a super user for this demo application, the credentials for a librarian has been seeded directly to the above provided database.
+Since the librarian acts as a super user for this demo application, the credentials for a librarian have been seeded directly to the above-provided database.
 
-Please use the following credentails to login as a librarian.
+Please use the following credentials to log in as a librarian.
 **Email:** amanwagle10@gmail.com
 **Password:** amanwagle10
 
